@@ -1,0 +1,38 @@
+# Runtime state
+.runtime/
+claude-cloud-runtime/
+
+# Kaggle/runtime artifacts
+/kaggle/
+/tmp/
+
+# Logs
+*.log
+logs/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Browser/runtime data
+browser/profile/
+browser/cache/
+browser/downloads/
+
+# Build/output files
+build/
+dist/
+out/
+*.tmp
+*.temp
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
