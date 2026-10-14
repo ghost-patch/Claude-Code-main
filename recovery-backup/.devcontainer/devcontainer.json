@@ -1,0 +1,11 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/stu-bell/devcontainer-features/node:0": {},
+		"ghcr.io/devcontainer-config/features/dot-config:5": {},
+		"ghcr.io/postfinance/devcontainer-features/claude-code:1": {},
+		"ghcr.io/postfinance/devcontainer-features/node:1": {},
+		"ghcr.io/cjcrobin/devcontainer-features/claudecode:1": {}
+	}
+}

@@ -1,0 +1,51 @@
+#!/bin/bash
+
+echo "=========================================="
+echo "       CLOUD LAPTOP STARTING..."
+echo "=========================================="
+
+# Start the XFCE + VNC + noVNC desktop
+~/start-browser-desktop.sh
+
+echo
+echo "Starting Cloudflare tunnel..."
+echo
+
+# Start Cloudflare in the background and capture its output
+LOGFILE="/tmp/cloudflare-tunnel.log"
+rm -f "$LOGFILE"
+
+cloudflared tunnel --url http://127.0.0.1:6080 > "$LOGFILE" 2>&1 &
+CF_PID=$!
+
+# Wait for the trycloudflare URL
+for i in {1..30}; do
+    sleep 1
+    TUNNEL_URL=$(grep -oE 'https://[-a-zA-Z0-9]+\.trycloudflare\.com' "$LOGFILE" | head -1)
+
+    if [ -n "$TUNNEL_URL" ]; then
+        break
+    fi
+done
+
+echo
+echo "=========================================="
+
+if [ -n "$TUNNEL_URL" ]; then
+    echo "       CLOUD LAPTOP IS READY"
+    echo "=========================================="
+    echo
+    echo "OPEN THIS ON YOUR PHONE:"
+    echo
+    echo "${TUNNEL_URL}/vnc.html?autoconnect=true&resize=scale"
+    echo
+    echo "Cloudflare PID: $CF_PID"
+    echo
+    echo "Keep this Codespace running."
+else
+    echo "       CLOUDFLARE URL NOT FOUND"
+    echo "=========================================="
+    echo
+    echo "Check:"
+    echo "  cat $LOGFILE"
+fi
