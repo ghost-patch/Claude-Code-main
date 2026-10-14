@@ -1,0 +1,46 @@
+{
+  "name": "claude-code-main",
+  "version": "1.0.0",
+  "description": "A reproducible cloud Linux workstation designed to run inside temporary cloud compute environments such as Kaggle.",
+  "main": "test-stream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "remotion": "remotion",
+    "render": "remotion render LogoTransition output/logo-transitions.mp4",
+    "preview": "remotion preview src/index.ts"
+  },
+  "remotion": {
+    "registerRoot": "src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghost-patch/Claude-Code-main.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ghost-patch/Claude-Code-main/issues"
+  },
+  "homepage": "https://github.com/ghost-patch/Claude-Code-main#readme",
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.1",
+    "@react-three/postprocessing": "^3.1.3",
+    "@remotion/cli": "^4.0.531",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "motion": "^14.0.0",
+    "remotion": "^4.0.531",
+    "three": "^0.186.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0"
+  }
+}
