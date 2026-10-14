@@ -1,0 +1,109 @@
+=== RECOVERY MANIFEST ===
+Wed Oct 14 03:36:45 UTC 2026
+
+--- claude ---
+/home/codespace/.local/bin/claude
+2.1.296 (Claude Code)
+--- brave-browser ---
+/usr/bin/brave-browser
+Brave Browser 153.1.95.104 
+--- google-chrome ---
+/usr/bin/google-chrome
+Google Chrome 153.0.8010.52 
+--- cloudflared ---
+/usr/local/bin/cloudflared
+cloudflared version 2026.9.1 (built 2026-09-11-13:35 UTC)
+--- Xvfb ---
+/usr/bin/Xvfb
+--- x11vnc ---
+/usr/bin/x11vnc
+x11vnc: 0.9.16 lastmod: 2019-01-05
+--- websockify ---
+/usr/bin/websockify
+Usage: 
+    websockify [options] [source_addr:]source_port [target_addr:target_port]
+--- dbus-launch ---
+/opt/conda/bin/dbus-launch
+--- startxfce4 ---
+/usr/bin/startxfce4
+
+=== RELEVANT INSTALLED PACKAGES ===
+brave-browser	1.95.104
+brave-keyring	1.20
+cloudflared	2026.9.1
+elementary-xfce-icon-theme	0.19-1
+fonts-dejavu-core	2.37-8
+fonts-dejavu-mono	2.37-8
+fonts-droid-fallback	1:6.0.1r16-1.1build1
+fonts-freefont-ttf	20211204+svn4273-2
+fonts-ipafont-gothic	00303-21ubuntu1
+fonts-liberation	1:2.1.5-3
+fonts-liberation-sans-narrow	1:1.07.6-4
+fonts-noto-color-emoji	2.047-0ubuntu0.24.04.1
+fonts-noto-mono	20201225-2
+fonts-quicksand	0.2016-2.1
+fonts-tlwg-loma-otf	1:0.7.3-1
+fonts-ubuntu	0.869+git20240321-0ubuntu1
+fonts-unifont	1:15.1.01-1build1
+fonts-urw-base35	20200910-8
+fonts-wqy-zenhei	0.9.45-8
+google-chrome-stable	153.0.8010.52-1
+libxfce4panel-2.0-4	4.18.4-1ubuntu0.1
+libxfce4ui-2-0:amd64	4.18.4-1build4
+libxfce4ui-common	4.18.4-1build4
+libxfce4ui-utils	4.18.4-1build4
+libxfce4util-bin	4.18.1-2build3
+libxfce4util-common	4.18.1-2build3
+libxfce4util7:amd64	4.18.1-2build3
+novnc	1:1.3.0-2
+python3-novnc	1:1.3.0-2
+python3-websockify	0.10.0+dfsg1-5build2
+websockify	0.10.0+dfsg1-5build2
+x11vnc	0.9.16-10
+xauth	1:1.1.2-1build1
+xfce4	4.18
+xfce4-appfinder	4.18.0-1build2
+xfce4-battery-plugin:amd64	1.1.5-1build2
+xfce4-clipman	2:1.6.5-1build2
+xfce4-clipman-plugin	2:1.6.5-1build2
+xfce4-cpufreq-plugin:amd64	1.2.8-2build2
+xfce4-cpugraph-plugin:amd64	1.2.10-1build2
+xfce4-dict	0.8.6-1build2
+xfce4-diskperf-plugin:amd64	2.7.0-1build2
+xfce4-fsguard-plugin:amd64	1.1.3-1build2
+xfce4-genmon-plugin:amd64	4.1.1-1build2
+xfce4-goodies:amd64	4.18.2build1
+xfce4-helpers	4.18.4-0ubuntu3
+xfce4-mailwatch-plugin	1.3.1-1build2
+xfce4-netload-plugin:amd64	1.4.1-1build2
+xfce4-notifyd	0.9.4-1
+xfce4-panel	4.18.4-1ubuntu0.1
+xfce4-places-plugin:amd64	1.8.3-1build2
+xfce4-power-manager	4.18.3-2build3
+xfce4-power-manager-data	4.18.3-2build3
+xfce4-power-manager-plugins	4.18.3-2build3
+xfce4-pulseaudio-plugin:amd64	0.4.8-1build2
+xfce4-screenshooter	1.10.5-1build1
+xfce4-sensors-plugin	1.4.4-1build2
+xfce4-session	4.18.3-1build2
+xfce4-settings	4.18.4-0ubuntu3
+xfce4-smartbookmark-plugin:amd64	0.5.2-1build2
+xfce4-systemload-plugin:amd64	1:1.3.2-2ubuntu3
+xfce4-taskmanager	1.5.7-1build1
+xfce4-terminal	1.1.3-1build1
+xfce4-timer-plugin:amd64	1.7.2-1build2
+xfce4-verve-plugin:amd64	2.0.3-1build2
+xfce4-wavelan-plugin:amd64	0.6.3-1build2
+xfce4-weather-plugin:amd64	0.11.2-1build2
+xfce4-whiskermenu-plugin	2.8.3-1build2
+xfce4-xkb-plugin:amd64	1:0.8.3-1build2
+xfonts-base	1:1.0.5+nmu1
+xfonts-cyrillic	1:1.0.5+nmu1
+xfonts-encodings	1:1.0.5-0ubuntu2
+xfonts-scalable	1:1.0.3-1.3
+xfonts-utils	1:7.7+6build3
+xvfb	2:21.1.12-1ubuntu1.8
+
+=== NOVNC FILES ===
+drwxr-xr-x 7 root root  4096 Sep 20 23:27 /usr/share/novnc
+-rw-r--r-- 1 root root 16400 Sep 21 00:35 /usr/share/novnc/vnc.html
